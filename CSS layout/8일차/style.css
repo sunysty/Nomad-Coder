@@ -1,0 +1,170 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  text-transform: uppercase;
+  background-color: rgb(7, 7, 7);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header,
+.footer,
+.leftNav-first,
+.leftNav-second,
+.leftNav-third,
+.rightNav-first,
+.rightNav-second {
+  border: rgb(15, 14, 14) 4px solid;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.header,
+.footer {
+  width: auto;
+  height: 3vh;
+  color: rgb(85, 70, 70);
+  background-color: whitesmoke;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 92%;
+}
+
+.leftNav-second,
+.leftNav-third {
+  background-color: whitesmoke;
+}
+
+.leftNav-first,
+.leftNav-third,
+.rightNav-first,
+.rightNav-second {
+  width: 3vh;
+  height: auto;
+  font-size: 1.5vh;
+}
+
+.leftNav-first,
+.leftNav-first > a {
+  color: whitesmoke;
+  background-color: rgb(85, 70, 70);
+  height: 55%;
+}
+
+.leftNav-second {
+  padding: 12px;
+  font-size: 1.5vh;
+  writing-mode: vertical-rl;
+  height: 30%;
+}
+
+.leftNav-second > a,
+.leftNav-third > a {
+  letter-spacing: 5px;
+  color: rgb(85, 70, 70);
+}
+
+.rightNav-first > a,
+.rightNav-second > a {
+  color: whitesmoke;
+}
+
+.rightNav-first,
+.rightNav-second {
+  color: whitesmoke;
+  background-color: rgb(85, 70, 70);
+  width: 3vh;
+  height: 49%;
+  margin-top: -2px;
+  display: flex;
+  align-items: center;
+}
+
+.leftNav-first,
+.leftNav-third,
+.rightNav-first,
+.rightNav-second {
+  padding-left: 8.5px;
+}
+
+.leftNav-third {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 8%;
+}
+
+svg {
+  margin: 3px 3px 3px 0;
+}
+
+.main-title {
+  width: 40vh;
+  height: 40vh;
+  position: absolute;
+  float: unset;
+  top: 30%;
+  left: 40%;
+  background-color: rgba(85, 70, 70, 0.8);
+  border-radius: 50%;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  font-size: 3vh;
+  font-family: "Potta One", cursive;
+  color: rgb(32, 27, 15);
+  padding: 3vh 0;
+}
+.sunny,
+.cafe {
+  display: flex;
+  justify-content: center;
+  font-size: 10vh;
+  font-family: "Lobster", cursive;
+  color: rgb(221, 213, 213);
+}
+
+.background_1 {
+  background-image: url("src/main_1.jpg");
+  width: 33%;
+  height: auto;
+  background-size: cover;
+}
+
+.background_2 {
+  background-image: url("src/main_2.jpg");
+  width: 33%;
+  height: auto;
+  background-size: cover;
+}
+
+.background_3 {
+  background-image: url("src/main_3.jpg");
+  width: 33%;
+  height: auto;
+  background-size: cover;
+}
+
+.kakaotalk {
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  bottom: 3vh;
+  right: 6vh;
+  z-index: 1;
+  background-color: whitesmoke;
+  padding: 1.5vh 0 0 1.5vh;
+}

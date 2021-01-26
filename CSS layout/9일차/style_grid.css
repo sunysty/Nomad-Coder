@@ -1,0 +1,89 @@
+/* COMMON */
+.grid__container > ul > li {
+  list-style: none;
+}
+
+/* SECTION */
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid__container > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template:
+    " year . paint "
+    " . piece . "
+    " painter . more ";
+  border: black solid 3px;
+}
+
+.grid__container > ul > li:nth-child(1) {
+  grid-area: year;
+  justify-content: start;
+}
+.grid__container > ul > li:nth-child(2) {
+  grid-area: paint;
+}
+.grid__container > ul > li:nth-child(3) {
+  grid-area: painter;
+}
+.grid__container > ul > li:nth-child(4) {
+  grid-area: more;
+}
+.grid__container > ul > li:nth-child(5) {
+  grid-area: piece;
+}
+
+.grid__container > .first > li:nth-child(5) {
+  background-image: url("./src/1.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .second > li:nth-child(5) {
+  background-image: url("./src/2.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .third > li:nth-child(5) {
+  background-image: url("./src/3.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .fourth > li:nth-child(5) {
+  background-image: url("./src/4.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .fifth > li:nth-child(5) {
+  background-image: url("./src/5.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .sixth > li:nth-child(5) {
+  background-image: url("./src/6.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .seventh > li:nth-child(5) {
+  background-image: url("./src/7.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .eigth > li:nth-child(5) {
+  background-image: url("./src/8.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .nineth > li:nth-child(5) {
+  background-image: url("./src/9.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .ten > li:nth-child(5) {
+  background-image: url("./src/10.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .eleven > li:nth-child(5) {
+  background-image: url("./src/11.jpg");
+  text-indent: -9999px;
+}
+.grid__container > .tweleve > li:nth-child(5) {
+  background-image: url("./src/12.jpg");
+  text-indent: -9999px;
+}

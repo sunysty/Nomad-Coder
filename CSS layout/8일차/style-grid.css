@@ -1,0 +1,108 @@
+-----colors-----
+babypink : #f5cec7
+orange : #ffb284
+yellow : #ffc98b
+olive : #c6c09c
+white : #whitesmoke 
+
+
+body {
+  text-transform: uppercase;
+  background-color: #f5cec7;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* grid container */
+.container {
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(30, 1fr);
+  border: #ffb284 solid 5px;
+}
+
+/* animation */
+.header,
+.footer {
+  animation-iteration-count: infinite;
+}
+
+/* header */
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  color: #ffb284;
+}
+
+.nav {
+}
+
+/* left */
+.left-first {
+  grid-row: 2 / -8;
+  grid-column: 1 / 2;
+  color: whitesmoke;
+  background-color: #ffb284;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.left-second {
+  grid-row: -8 / -4;
+  grid-column: 1 / 2;
+  color: #ffb284;
+  font-size: 50px;
+}
+
+.left-third {
+  grid-row: -4 / -2;
+  grid-column: 1 / 2;
+  color: #ffb284;
+  font-size: 50px;
+}
+
+/* right */
+.right-first {
+  grid-row: 2 / 10;
+  grid-column: -2 / -1;
+  background-color: #c6c09c;
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+.right-second {
+  grid-row: 10 / -2;
+  grid-column: -2 / -1;
+  background-color: #c6c09c;
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+.bg-1 {
+  grid-row: 2 / -2;
+  grid-column: 2 / 15;
+}
+
+.bg-2 {
+  grid-row: 2 / -2;
+  grid-column: 15 / 2;
+}
+
+.footer {
+  grid-row: -2 / -1;
+  grid-column: 1 / -1;
+  color: #ffb284;
+}
+
+.kakaotalk {
+}
+
+/* grid를 이용해서 하고 싶었으나 몇가지 문제가 발생했다.
+1. 글자를 한개씩 포지셔닝 하는 방법을 잘 모르겠다.
+2. 이미지 사이즈가 너무크다
+3. 왜 grid가 내 생각대로 안 나타나는지 잘 모르겠다.
+
+--->위와같은 이유로 grid가 아닌, flexbox로 만들어봐야겠다는 생각을 하게됨.*/

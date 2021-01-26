@@ -1,0 +1,64 @@
+.container {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-template:
+    "b p s a"
+    "r . s a"
+    "r y s a";
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 200px);
+}
+
+.black {
+  background-color: black;
+  color: white;
+  grid-area: b;
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+.mirro {
+  transform: scaleY(-1);
+  filter: FlipV;
+  margin-bottom: -10px;
+}
+
+.red {
+  padding: 10px;
+  background-color: red;
+  color: black;
+  grid-area: r;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.purple {
+  background-color: purple;
+  grid-area: p;
+}
+
+.yellow {
+  padding: 10px;
+  background-color: yellow;
+  color: black;
+  grid-area: y;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.speakers {
+  padding: 10px;
+  color: black;
+  grid-area: s;
+}
+
+span {
+  background-color: purple;
+}
+
+.artists {
+  padding: 10px;
+  color: black;
+  grid-area: a;
+}

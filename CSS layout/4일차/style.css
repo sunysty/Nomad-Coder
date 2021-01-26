@@ -1,0 +1,5 @@
+body {
+  display: grid;
+  grid-template-rows: (8, minmax(auto-fill));
+  grid-template-columns: (2, 2);
+}

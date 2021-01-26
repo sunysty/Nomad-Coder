@@ -1,0 +1,195 @@
+/* COMMON */
+.body__container {
+  font-family: ;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: rgb(164, 170, 164);
+}
+
+/* SCROLL */
+::-webkit-scrollbar {
+  width: 1.5vh;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(199, 197, 197);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(34, 34, 34);
+}
+
+/* HEADER */
+.logo {
+  display: flex;
+  justify-content: center;
+  font-size: 7vh;
+  margin: 20px;
+}
+
+.select-group__container > form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.select-group__container > form > select {
+  border: black 1px solid;
+  height: 8vh;
+  font-size: 2.5vh;
+  /* -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("./src/down.png") no-repeat 95% 50%; */
+}
+
+.select-group__container > form > select:hover {
+  color: rgb(169, 175, 168);
+}
+
+form > input {
+  display: none;
+}
+
+/* SECTION */
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid__container > ul {
+  border: black solid 1px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+
+.grid__container > ul > li {
+  margin: 10px;
+  color: black;
+}
+
+.grid__container > ul > li:nth-child(1) {
+  position: absolute;
+  left: 0;
+}
+.grid__container > ul > li:nth-child(2) {
+  position: absolute;
+  right: 0;
+}
+.grid__container > ul > li:nth-child(3) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.grid__container > ul > li:nth-child(4) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.grid__container > ul > li:nth-child(5) {
+  align-self: center;
+  width: 20vh;
+  height: 30vh;
+}
+
+/* BACKGROUND IMAGE */
+.grid__container > .first > li:nth-child(5) {
+  background-image: url("./src/1.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .second > li:nth-child(5) {
+  background-image: url("./src/2.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .third > li:nth-child(5) {
+  background-image: url("./src/3.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .fourth > li:nth-child(5) {
+  background-image: url("./src/4.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .fifth > li:nth-child(5) {
+  background-image: url("./src/5.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .sixth > li:nth-child(5) {
+  background-image: url("./src/6.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .seventh > li:nth-child(5) {
+  background-image: url("./src/7.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .eigth > li:nth-child(5) {
+  background-image: url("./src/8.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .nineth > li:nth-child(5) {
+  background-image: url("./src/9.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .ten > li:nth-child(5) {
+  background-image: url("./src/10.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .eleven > li:nth-child(5) {
+  background-image: url("./src/11.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+.grid__container > .tweleve > li:nth-child(5) {
+  background-image: url("./src/12.jpg");
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+/* MEDIA QURY -- tabelet : 768px */
+@media screen and (max-width: 768px) {
+  .select-group__container > form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+/* MEDIA QURY -- mobile : 425px */
+@media screen and (max-width: 425px) {
+  .select-group__container > form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .grid__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+  }
+}

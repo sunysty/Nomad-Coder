@@ -1,0 +1,133 @@
+/* BODY */
+.body__container {
+  height: 100%;
+  position: relative;
+  float: clearfix;
+}
+
+/* LEFT */
+.weekly {
+  position: absolute;
+  width: 60vw;
+  background: #000;
+  float: left;
+}
+.weekly .sideproject {
+  display: grid;
+  grid-template-columns: 1fr 6fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "da c de"
+    "da c p";
+  height: 20vh;
+  color: rgb(235, 235, 235);
+  background-color: rgb(225, 189, 255);
+  font-family: "Cinzel", serif;
+  font-family: "Courgette", cursive;
+  font-family: "Gloria Hallelujah", cursive;
+}
+.day,
+.contents,
+.department,
+.period {
+  display: flex;
+  justify-content: center;
+  border: rgb(233, 233, 233) 2px solid;
+}
+.weekly .day {
+  grid-area: da;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  font-size: 4vh;
+  padding: 20px;
+}
+.weekly .contents {
+  grid-area: c;
+  font-size: 5vh;
+  padding-top: 50px;
+}
+.weekly .department {
+  grid-area: de;
+  font-size: 3vh;
+  padding-top: 20px;
+}
+.weekly .period {
+  grid-area: p;
+  font-size: 3vh;
+  padding-top: 20px;
+}
+
+.weekly .sideproject:hover {
+  color: #e5e5e5;
+  background-color: rgb(177, 92, 247);
+  border: #272626 3px solid;
+}
+.day:hover,
+.contents:hover,
+.department:hover,
+.period:hover {
+  color: rgb(177, 92, 247);
+  background-color: #f8e8ff;
+  font-weight: 900;
+}
+
+/* MIDDLE */
+.line {
+  position: absolute;
+  left: 61.2%;
+  width: 3vw;
+  height: 130vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px 50px 0;
+  border-right: rgb(86, 78, 93) 2px solid;
+  color: rgb(209, 201, 201);
+  background-color: rgb(177, 92, 247);
+  font-size: 4vh;
+  writing-mode: vertical-rl;
+  font-family: "Cinzel", serif;
+  font-family: "Courgette", cursive;
+  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Hammersmith One", sans-serif;
+}
+.line1 {
+  color: rgb(177, 92, 247);
+}
+.line2 {
+}
+.line3 {
+  transform: rotate(180deg);
+}
+/* RIGHT */
+.todo {
+  position: fixed;
+  left: 64.6%;
+  width: 35vw;
+  height: 100%;
+  font-family: "Cinzel", serif;
+  font-family: "Courgette", cursive;
+  font-family: "Gloria Hallelujah", cursive;
+  background-color: rgb(248, 241, 141);
+}
+.title {
+  display: flex;
+  justify-content: space-around;
+  font-size: 4vh;
+  color: rgb(151, 151, 151);
+}
+.list__container {
+  padding: 10vh 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 1vh;
+}
+.list {
+  border-top: rgb(151, 151, 151) solid 3px;
+  color: #6fa0c8;
+}
+.list:hover {
+  background: #6fa0c8;
+  color: #e5e5e5;
+}

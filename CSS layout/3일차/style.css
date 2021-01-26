@@ -1,0 +1,87 @@
+.grid {
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: repeat(4, 225px);
+  grid-template-rows: repeat(15, 55px);
+  gap: 15px;
+  width: 720px;
+  height: auto;
+  padding: 50px;
+}
+
+.header {
+  background-color: black;
+  color: blanchedalmond;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.upcoming {
+  width: 150px;
+  height: 110px;
+  margin: 70px 20px 0;
+}
+
+.at {
+  width: 290px;
+  height: 110px;
+  margin: 70px 5px 0;
+}
+
+.hope {
+  width: 240px;
+  height: 110px;
+  margin: 70px 20px 20px 0;
+}
+
+.content {
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 9;
+}
+
+.bad {
+  color: black;
+  font-size: 200px;
+  font-weight: bold;
+  letter-spacing: -5px;
+  margin-top: 170px;
+}
+.nav {
+  background-color: red;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 9;
+}
+
+.footer {
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 15;
+}
+
+.religion {
+  color: black;
+  font-size: 200px;
+  font-weight: bold;
+  letter-spacing: -5px;
+}
+
+.with {
+  color: blanchedalmond;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 0 15px;
+}
